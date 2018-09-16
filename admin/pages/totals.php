@@ -13,7 +13,7 @@
     <link rel="shortcut icon" href="../../img/favicon.ico" type="image/x-icon">
 
 
-    <title>Department Wise Visits</title>
+    <title>Total Visits</title>
     
     <!-- Bootstrap CSS version 4.1.3 -->
 	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO"
@@ -332,7 +332,7 @@
 		 aria-label="Toggle navigation">
 			<span class="navbar-toggler-icon"></span>
         </button>
-        <h> Lib-Com</h>
+        <h style="padding-left:10px"> Lib-Com</h>
 		<div class="collapse navbar-collapse" id="navbarNav">
 			<ul class="navbar-nav ml-auto">
 				<li class="nav-item">
@@ -347,14 +347,13 @@
         <!--Side Bar/Menu-->
 		<nav id="sidebar">
 			<div class="sidebar-header">
-				<h3>Menu</h3>
-				
+				<h3>Menu</h3>				
 			</div>
-			<ul class="list-unstyled components">
-		    <a href="indexx.php"><h3 style="padding:10px";>Dash Board</h3></a>
+			<ul class="list-unstyled components" >
+		    <a href="index.php"><h4 style="padding:10px";>Dash Board</h4></a>
 				<li>
-					<a href="#homeSubmenu" data-toggle="collapse" aria-expanded="false" class="dropdown-toggle">Services</a>
-					<ul class="collapse list-unstyled" id="homeSubmenu">
+					<a href="#homeSubmenu" data-toggle="collapse" aria-expanded="false" class="dropdown-toggle" style="color:yellow">Services</a>
+					<ul class="list-unstyled" id="homeSubmenu">
 						<li>
 							<a href="http://www.jecc.ac.in/campusbook">
 							<i class="fas fa-book-open faa-wrench animated" style="font-size:20px;"></i> CampusBook</a>
@@ -374,15 +373,16 @@
 					</ul>
 				</li>
 				<li>
-					<a href="#pageSubmenu" data-toggle="collapse" aria-expanded="false" class="dropdown-toggle">Page</a>
-					<ul class="collapse list-unstyled" id="pageSubmenu">
-						<li><a href="#">page1</a></li>
-						<li><a href="#">page2</a></li>
-						<li><a href="#">page3</a></li>
+					<a href="#pageSubmenu" data-toggle="collapse" aria-expanded="false" class="dropdown-toggle" style="color:yellow">Page</a>
+					<ul class="list-unstyled" id="pageSubmenu">
+						<li><a href="totals.php">Total Visits</a></li>
+                        <li><a href="reports.php">Reports</a></li>
+                        <li><a href="date.php">DateWise Scans</a></li>
+                        
 					</ul>
 				</li>
-				<li><a href="#">Services</a></li>
-				<li><a href="#">Contact Us</a></li>
+				
+				<li><a href="contact.php">Contact Us</a></li>
 			</ul>
 		</nav>
 		<!--/-Side Bar/Menu  ended-->

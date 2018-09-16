@@ -11,18 +11,24 @@
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <meta name="description" content="">
-    <meta name="author" content="">
     <link rel="shortcut icon" href="../../img/favicon.ico" type="image/x-icon">
 
     <title>Date Wise Scans</title>
-    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.1.1/css/all.css" integrity="sha384-O8whS3fhG2OnA5Kas0Y9l3cfpmYjapjI0E4theH4iuMD+pLhbf6JI0jIMfYcK3yZ" crossorigin="anonymous">
+    
+    <!-- Bootstrap CSS version 4.1.3 -->
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO"
+	 crossorigin="anonymous">
 
-    <link href="../vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">    <!-- Bootstrap Core CSS -->
-    <link href="../vendor/metisMenu/metisMenu.min.css" rel="stylesheet">        <!-- MetisMenu CSS -->
-    <link href="../dist/css/sb-admin-2.css" rel="stylesheet">                   <!-- Custom CSS -->
-    <link href="../vendor/morrisjs/morris.css" rel="stylesheet">                <!-- Morris Charts CSS -->
-    <link href="../vendor/font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">  <!-- Custom Fonts -->
+    <!--Font Awesome version 5.2.0-->
+	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.2.0/css/all.css" integrity="sha384-hWVjflwFxL6sNzntih27bfxkr27PmbbK/iSvJ+a4+0owXq79v+lsFkW54bOGbiDQ"
+	 crossorigin="anonymous">
+	<!-- FontAwesome Icon Animation CSS-->
+	<link rel="stylesheet" type="text/css" href="../dist/css/anima.css">
+
+    <link rel="stylesheet" type="text/css" href="../dist/css/style.css">
+    <link rel="stylesheet" href="style.css">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css">
+
 
     <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
     <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
@@ -30,35 +36,82 @@
         <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
         <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
     <![endif]-->
+    
 </head>
 
 <body>
 
-    <div id="wrapper">
-        <nav class="navbar navbar-default navbar-static-top" role="navigation" style="margin-bottom: 0">
-            <div class="navbar-header">
-                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
-                    <span class="sr-only">Toggle navigation</span>
-                    <span class="icon-bar"></span>
-                    <span class="icon-bar"></span>
-                    <span class="icon-bar"></span>
-                </button>
-                <a class="navbar-brand" href="index.php">Admin</a>
-            </div>
-            <ul class="nav navbar-top-links navbar-right">
-            <a href="../logout.php" onclick="return confirm('Do You want to log out?')"><i class="fa fa-sign-out fa-fw"></i> Logout</a>
-            </ul>
-        </nav>
+    <nav class="navbar navbar-expand-lg navbar-light bg-lig">
+		<button type="button" id="sidebarCollapse" class="btn btn-infos">
+			<i class="fa fa-align-justify"></i>
+		</button>
+		<!--<a class="navbar-brand" href="#">Navbar</a> -->
+		<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false"
+		 aria-label="Toggle navigation">
+			<span class="navbar-toggler-icon"></span>
+        </button>
+        <h style="padding-left:10px"> Lib-Com</h>
+		<div class="collapse navbar-collapse" id="navbarNav">
+			<ul class="navbar-nav ml-auto">
+				<li class="nav-item">
+                    <a href="../logout.php" onclick="return confirm('Do You want to log out?')">
+					<i class="fas fa-sign-out-alt"></i> Logout</a>
+				</li>
+			</ul>
+		</div>
+	</nav>
 
-        <div id="page-wrapper">
+    <div class="wrapper">
+
+
+        <!--Side Bar/Menu-->
+		<nav id="sidebar">
+			<div class="sidebar-header">
+				<h3>Menu</h3>
+				
+			</div>
+			<ul class="list-unstyled components">
+		    <a href="indexx.php"><h3 style="padding:10px";>Dash Board</h3></a>
+				<li>
+					<a href="#homeSubmenu" style="color:yellow" data-toggle="collapse" aria-expanded="false" class="dropdown-toggle">Services</a>
+					<ul class="list-unstyled" id="homeSubmenu">
+						<li>
+							<a href="http://www.jecc.ac.in/campusbook">
+							<i class="fas fa-book-open faa-wrench animated" style="font-size:20px;"></i> CampusBook</a>
+						</li>
+						<li>
+							<a href="http://202.88.225.92/xmlui">
+							<i class="fas fa-desktop faa-float animated" style="font-size:20px;"></i> Digital Space </a>
+						</li>
+						<li>
+							<a href="http://192.168.2.206/">
+							<i class="far fa-newspaper faa-tada animated" style="font-size:20px;"></i> NPTEL Courses</a>
+						</li>
+						<li>
+							<a href="http://jecc.ac.in/library/libusers/login">
+							<i class="fas fa-lock faa-flash animated" style="font-size:20px;"></i> Library Log In</a>
+						</li>
+					</ul>
+				</li>
+				<li>
+					<a href="#pageSubmenu"  style="color:yellow" data-toggle="collapse" aria-expanded="false" class="dropdown-toggle">Page</a>
+					<ul class=" list-unstyled" id="pageSubmenu">
+						<li><a href="totals.php">Total Visits</a></li>
+						<li><a href="reports.php">Reports</a></li>
+					</ul>
+				</li>
+				
+				<li><a href="#">Contact Us</a></li>
+			</ul>
+		</nav>
+		<!--/-Side Bar/Menu  ended-->
+        
+
+        <div class="content" style="padding-left:10px">
             <div class="content-wrapper">                                             <!-- Content Wrapper. Contains page content -->
                 <section class="content-header">                                      <!-- Content Header (Page header) -->
-                    <h1>Faculty Date wise Visits</h1>
-                    <ol class="breadcrumb">
-                        <li><a href="index.php"><i class="fas fa-school"></i> Home</a></li>
-                        <li><a href="totalscans.php"><i class="fas fa-desktop"></i> Total Visits</a></li>
-                        <li><a href="#"><i class="far fa-clock"></i> Date Wise Visits-Faculty</a></li>
-                    </ol>
+                    <h1 style="font-family:Times of roman">Date wise Visits</h1>
+                    <hr>
                 </section>
         
                 <section class="content">                                                                                    <!-- Main content -->
@@ -66,30 +119,37 @@
                         
                         <div class="col">
                             <form method="POST">
-                            From<br><input type="date" value="data" name="date_start"><br>
-                           To<br><input type="date" value="data" name="date_end"><br>
-                           <br>
-                            <input type="submit" name="save" value="Search Results..." class="btn btn-primary">
-                         
-                        </form>
-                        <br>
-<?php
-    if(isset($_POST['save'])){
-        $date_start = $_POST['date_start'].' 00:00:00';
-        $date_end = $_POST['date_end'].' 23:59:59';
-        $sel = mysqli_query($conn,"select * from log_staff where datetime_in between '$date_start' and '$date_end'");
-        $staff_btwn = 0;
-        if(mysqli_num_rows($sel)>0){
-            $staff_btwn = mysqli_num_rows($sel);            
-        }
-    }
-?>
+                                <div class="row">
+                                    <div class="col">
+                                        From<br><input type="date" value="data" name="date_start"><br>
+                                    </div>
+                                    <div class="col">
+                                        To<br><input type="date" value="data" name="date_end"><br>
+                                    </div>
+                                    <div class="col">
+                                        <button type="submit" name="save" class="btn btn-primary" value="Search Results... " > Submit
+                                            <i class="fas fa-spinner fa-pulse"></i>
+                                        </button>
+                                    </div>
+                                </div><br>
+                            </form><br>
+                        <?php
+                            if(isset($_POST['save'])){
+                                $date_start = $_POST['date_start'].' 00:00:00';
+                                $date_end = $_POST['date_end'].' 23:59:59';
+                                $sel = mysqli_query($conn,"select * from log_staff where datetime_in between '$date_start' and '$date_end'");
+                                $staff_btwn = 0;
+                                if(mysqli_num_rows($sel)>0){
+                                $staff_btwn = mysqli_num_rows($sel);            
+                                }
+                            }
+                        ?>
                         <div class="col-lg-3 col-md-6">
-                            <div class="panel panel-primary">
+                            <div class="panel panel-yellow">
                                 <div class="panel-heading">
                                     <div class="row">
                                         <div class="col-xs-3">
-                                            <i class="far fa-clock" style="font-size:68px"></i>
+                                            <i class="far fa-clock faa-flash animated" style="font-size:68px"></i>
                                         </div>
                                         <div class="col-xs-9 text-right">
                                             <div class="huge">
@@ -107,11 +167,11 @@
                                     </div>
                                 </div>
                                 <a href="reports.php">
-                                    <div class="panel-footer">
+                                    
                                         <span class="pull-left">View Details</span>
-                                        <span class="pull-right"><i class="fa fa-arrow-circle-right"></i></span>
-                                        <div class="clearfix"></div>
-                                    </div>
+                                        <span class="pull-right"><i class="fa fa-arrow-circle-right faa-wrench animated" style="font-size:48px"></i></span>
+                                        
+                                    
                                 </a>
                             </div>
                         </div>
@@ -126,16 +186,26 @@
 
  
 </body>
-<script src="../vendor/jquery/jquery.min.js"></script>
+     <!-- Optional JavaScript -->
+	<!-- jQuery first, then Popper.js, then Bootstrap JS -->
+	<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+	 crossorigin="anonymous"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49"
+	 crossorigin="anonymous"></script>
+	<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy"
+     crossorigin="anonymous"></script>
+     
+    <!-- Google charts -->
+    <script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
 
-<!-- Bootstrap Core JavaScript -->
-<script src="../vendor/bootstrap/js/bootstrap.min.js"></script>
-
-<!-- Metis Menu Plugin JavaScript -->
-<script src="../vendor/metisMenu/metisMenu.min.js"></script>
-
-<!-- Custom Theme JavaScript -->
-<script src="../dist/js/sb-admin-2.js"></script>
+	
+	<script>
+		$(document).ready(function () {
+			$('#sidebarCollapse').on('click', function () {
+				$('#sidebar').toggleClass('active');
+			});
+		});  
+    </script>
 </html>
 <?php
     }

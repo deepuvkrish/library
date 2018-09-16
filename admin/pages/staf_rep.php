@@ -15,7 +15,7 @@
     <link rel="shortcut icon" href="../../img/favicon.ico" type="image/x-icon">
 
 
-    <title>Department Wise Visits</title>
+    <title>Faculty Reports</title>
     
     <!-- Bootstrap CSS version 4.1.3 -->
 	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO"
@@ -53,7 +53,7 @@
 		 aria-label="Toggle navigation">
 			<span class="navbar-toggler-icon"></span>
         </button>
-        <h> Lib-Com</h>
+        <h style="padding-left:10px"> Lib-Com</h>
 		<div class="collapse navbar-collapse" id="navbarNav">
 			<ul class="navbar-nav ml-auto">
 				<li class="nav-item">
@@ -72,10 +72,10 @@
 				
 			</div>
 			<ul class="list-unstyled components">
-		    <a href="indexx.php"><h3 style="padding:10px";>Dash Board</h3></a>
+		    <a href="index.php"><h3 style="padding:10px";>Dash Board</h3></a>
 				<li>
-					<a href="#homeSubmenu" data-toggle="collapse" aria-expanded="false" class="dropdown-toggle">Services</a>
-					<ul class="collapse list-unstyled" id="homeSubmenu">
+					<a href="#homeSubmenu" data-toggle="collapse" aria-expanded="false" class="dropdown-toggle" style="color:yellow">Services</a>
+					<ul class="list-unstyled" id="homeSubmenu">
 						<li>
 							<a href="http://www.jecc.ac.in/campusbook">
 							<i class="fas fa-book-open faa-wrench animated" style="font-size:20px;"></i> CampusBook</a>
@@ -95,15 +95,15 @@
 					</ul>
 				</li>
 				<li>
-					<a href="#pageSubmenu" data-toggle="collapse" aria-expanded="false" class="dropdown-toggle">Page</a>
-					<ul class="collapse list-unstyled" id="pageSubmenu">
-						<li><a href="#">page1</a></li>
-						<li><a href="#">page2</a></li>
-						<li><a href="#">page3</a></li>
+					<a href="#pageSubmenu" data-toggle="collapse" aria-expanded="false" class="dropdown-toggle" style="color:yellow">Page</a>
+					<ul class="list-unstyled" id="pageSubmenu">
+						<li><a href="index.php">Home</a></li>
+						<li><a href="totals.php">Visits</a></li>
+                        <li><a href="reports.php">Reports</a></li>
+                        <li><a href="date.php">DateWise</a></li>
 					</ul>
 				</li>
-				<li><a href="#">Services</a></li>
-				<li><a href="#">Contact Us</a></li>
+				<li><a href="contact.php">Contact Us</a></li>
 			</ul>
 		</nav>
         <!--/-Side Bar/Menu  ended-->
@@ -193,22 +193,16 @@
 
 
 
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+	 crossorigin="anonymous"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49"
+	 crossorigin="anonymous"></script>
+	<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy"
+     crossorigin="anonymous"></script>
 
 
-
-        <script src="../vendor/jquery/jquery.min.js"></script>
-
-        <!-- Bootstrap Core JavaScript -->
-        <script src="../vendor/bootstrap/js/bootstrap.min.js"></script>
-    
-        <!-- Metis Menu Plugin JavaScript -->
-        <script src="../vendor/metisMenu/metisMenu.min.js"></script>
-        <!-- Custom Theme JavaScript -->
-        <script src="../dist/js/sb-admin-2.js"></script>
-        <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
-        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
-        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.2/js/bootstrap.min.js" integrity="sha384-o+RDsa0aLu++PJvFqy8fFScvbHFLtbvScb8AjopnFD+iEQ7wo/CG0xlczd+2O/em" crossorigin="anonymous"></script>
-        <script type="text/javascript" charset="utf8" src="https://cdn.datatables.net/1.10.19/js/jquery.dataTables.js"></script>
+     <!-- Custom Theme JavaScript -->
+       <script type="text/javascript" charset="utf8" src="https://cdn.datatables.net/1.10.19/js/jquery.dataTables.js"></script>
         <script src="https://code.jquery.com/jquery-3.3.1.js"></script>
         <script src="https://cdn.datatables.net/1.10.19/js/jquery.dataTables.min.js"></script>
         <script src="https://cdn.datatables.net/buttons/1.5.2/js/dataTables.buttons.min.js"></script>
@@ -230,6 +224,13 @@
             } );
         </script>
 
+        <script>
+		    $(document).ready(function () {
+			$('#sidebarCollapse').on('click', function () {
+				$('#sidebar').toggleClass('active');
+			});
+		    });  
+        </script>
        
         </body>
         </html>

@@ -111,7 +111,7 @@
 <a href="jecc.ac.in">
 <img src="img/head.png" style="width:50%" class="center" alt="Jyothi Official Website">
 </a>
-<div class="nav">
+<div class="nav" style="height: 500px">
     <ul>
         <li><a href="http://www.jecc.ac.in/campusbook" class="btn btn-primary"><i class="fas fa-book-open faa-wrench animated"style="font-size:20px;"></i> CampusBook</a></li>
         <li><a href="http://202.88.225.92/xmlui" class="btn btn-danger"><i class="fas fa-desktop faa-float animated"style="font-size:20px;"></i>  Digital Space </a>
@@ -142,7 +142,8 @@
     if ($f==1) 
     { 
         echo 'block';
-        /*  $r=2;    comment to stop timer */
+        /*     comment to stop timer */
+        $r=2; 
     } 
     else 
     {
@@ -165,7 +166,7 @@
                         </div>
                         <div style=" overflow: hidden;font-size: 15px;line-height: 20px;color:black;text-overflow: ellipsis;">
                            <?php echo $name;?> <br>
-                            <?php echo $dept;?> <?php echo $sem;?><br>
+                           <?php echo $dept;?> <br>
                              <div id="main_div" style=" display:
                             <?php 
                                 if ($dbName=="log_student") 
@@ -177,7 +178,7 @@
                                     echo 'none'; 
                                 } 
                             ?>"> 
-                            
+                            <?php echo $sem;?><br>
                             </div>
                             <b>IN:</b>
                             <?php $date1=date_create($dateIn); echo date("h:i:sa d/m/Y ", strtotime($dateIn));?> <br>
@@ -217,7 +218,7 @@
    <div class="clock" style="position: absolute;z-index: 100;bottom:80px;left:450px;width: 550px" ></div>
       </div>
 
-    <div class="footer">
+    <div class="footer" style="position : fixed">
         <div class="container">
             <div class="row"> <!-- Footer Copyright -->
                 <div class="col" align="center">

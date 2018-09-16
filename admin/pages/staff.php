@@ -69,7 +69,7 @@
 				
 			</div>
 			<ul class="list-unstyled components">
-		    <a href="indexx.php"><h3 style="padding:10px";>Dash Board</h3></a>
+		    <a href="index.php"><h3 style="padding:10px";>Dash Board</h3></a>
 				<li>
 					<a href="#homeSubmenu" data-toggle="collapse" aria-expanded="false" class="dropdown-toggle">Services</a>
 					<ul class="collapse list-unstyled" id="homeSubmenu">
@@ -94,12 +94,11 @@
 				<li>
 					<a href="#pageSubmenu" data-toggle="collapse" aria-expanded="false" class="dropdown-toggle">Page</a>
 					<ul class="collapse list-unstyled" id="pageSubmenu">
-						<li><a href="#">page1</a></li>
-						<li><a href="#">page2</a></li>
-						<li><a href="#">page3</a></li>
+						<li><a href="index.php">Home</a></li>
+						<li><a href="totals.php">Visits</a></li>
+						<li><a href="reports.php">Reports</a></li>
 					</ul>
 				</li>
-				<li><a href="#">Services</a></li>
 				<li><a href="#">Contact Us</a></li>
 			</ul>
 		</nav>
