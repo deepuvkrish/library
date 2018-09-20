@@ -159,7 +159,7 @@
 			<ul class="list-unstyled components">
 				
 				<li>
-					<a href="#homeSubmenu" style="color:yellow" data-toggle="collapse" aria-expanded="false" class="dropdown-toggle">Services</a>
+					<a href="#homeSubmenu" style="color:#05a8f3" data-toggle="collapse" aria-expanded="false" class="dropdown-toggle">Services</a>
 					<ul class="list-unstyled" id="homeSubmenu">
 						<li>
 							<a href="http://www.jecc.ac.in/campusbook">
@@ -180,7 +180,7 @@
 					</ul>
 				</li>
 				<li>
-					<a href="#pageSubmenu" style="color:yellow" data-toggle="collapse" aria-expanded="false" class="dropdown-toggle">Page</a>
+					<a href="#pageSubmenu" style="color:#05a8f3" data-toggle="collapse" aria-expanded="false" class="dropdown-toggle">Page</a>
 					<ul class="list-unstyled" id="pageSubmenu">
 						<li><a href="totals.php">Total Visits</a></li>
 						<li><a href="reports.php">Reports</a></li>

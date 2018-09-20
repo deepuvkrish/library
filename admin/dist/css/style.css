@@ -1,13 +1,39 @@
 body {
+    
     overflow-x: hidden;
     background: -webkit-linear-gradient(top, #bee9ed 0%,#edfbfc 37%,#f4f7fc 74%,#fff 100%); /* Chrome10-25,Safari5.1-6 */
     background: linear-gradient(to bottom, #bee9ed 0%,#edfbfc 37%,#f4f7fc 74% #fff 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
     filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#2fdfef', endColorstr='#7ffffa',GradientType=0 );
   }
+ .background {
+  background-image: url("../../../img/jec.JPG");
+  background-image: bottom center no-repeat;
+  background-color: #cccccc;
+  background-repeat: no-repeat;
+  background-position:center;
+  background-size: contain;
+  -webkit-background-size:cover;
+  -moz-background-size:cover;
+  -o-background-size:cover;
+  background-size:cover;
+ }
 
-  
-.foot {
+ .contact {
+  width: 420px;
+  height: 320px;
+  background: rgba(0, 0, 0, 0.7);
+  color: #fff;
+  top: 30%;
+  left: 900px;
   position: relative;
+  transform: translate(-50%, -50%);
+  box-sizing: border-box;   
+  border-radius: 20px;  
+}
+
+
+.foot {
+  position: fixed;
   left: 0;
   bottom: 0;
   width: 100%;
@@ -77,4 +103,5 @@ body {
   background-color: violet;
 
 }
+
 

@@ -23,8 +23,7 @@
 	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css">
 
 	<!--Font Awesome version 5.2.0-->
-	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.2.0/css/all.css" integrity="sha384-hWVjflwFxL6sNzntih27bfxkr27PmbbK/iSvJ+a4+0owXq79v+lsFkW54bOGbiDQ"
-	 crossorigin="anonymous">
+	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU" crossorigin="anonymous">
 	<!-- FontAwesome Icon Animation CSS-->
 	<link rel="stylesheet" type="text/css" href="../dist/css/anima.css">
 	<link rel="stylesheet" type="text/css" href="../dist/css/style.css">
@@ -40,8 +39,7 @@
 	
 </head>
 
-
-<body>
+<body class="background">
 
 <nav class="navbar navbar-expand-lg navbar-light bg-lig">
     <button type="button" id="sidebarCollapse" class="btn btn-infos">
@@ -68,14 +66,13 @@
 		<nav id="sidebar">
 			<div class="sidebar-header">
 				<h3>Menu</h3>
-				
 			</div>
 			<ul class="list-unstyled components">
                 <li>
-                <a href="index.php" style="color:yellow">Home</a>
+                <a href="index.php" style="color:#05a8f3">Home</a>
                 </li>
 				<li>
-					<a href="#homeSubmenu" data-toggle="collapse" aria-expanded="false" class="dropdown-toggle" style="color:yellow">Services</a>
+					<a href="#homeSubmenu" data-toggle="collapse" aria-expanded="false" class="dropdown-toggle" style="color:#05a8f3">Services</a>
 					<ul class="list-unstyled" id="homeSubmenu">
 						<li>
 							<a href="http://www.jecc.ac.in/campusbook">
@@ -96,7 +93,7 @@
 					</ul>
 				</li>
 				<li>
-					<a href="#pageSubmenu" data-toggle="collapse" aria-expanded="false" class="dropdown-toggle" style="color:yellow">Page</a>
+					<a href="#pageSubmenu" data-toggle="collapse" aria-expanded="false" class="dropdown-toggle" style="color:#05a8f3">Page</a>
 					<ul class="list-unstyled" id="pageSubmenu">
 						<li><a href="totals.php">Total Visits</a></li>
 						<li><a href="reports.php">Reports</a></li>
@@ -108,33 +105,29 @@
 		</nav>
 		<!--/-Side Bar/Menu  ended-->
     <div class="content">
-    <div>
-    <img src="../../img/head.png" height=100px width=100% >
-    </div>
-    <div>
-    <h3 style="font-family:Times new roman;padding-top:20px;padding-left:30px"> Mr.VINOD </h3> 
-    </div>
-    <div>
-    <h3 style="font-family:Letter Gothic Std;padding-left:30px"> Software Engg </h3> <br>
-    <h3 style="font-family:Orator Std;padding-left:30px"> Jyothi Engg College </h3> 
-    </div>
-    <h4 style="font-family:Papyrus;padding-left:30px"> Phone No:- 9567225125 </h4> <br>
-    
-    </div>
-
+    	<div>
+    		<img src="../../img/head.png" height=100px width=100% >
+    	</div>
+		<div class="contact">
+			<i class="fas fa-user-tie  faa-float animated" style="padding-top:20px;padding-left:30px"></i> Mr. VINOD <br> <br>
+			<i class="fas fa-address-card faa-flash animated"style="padding-left:30px"></i> Software Engineer <br><br>
+			<i class="fas fa-landmark faa-flash animated" style="padding-left:30px"></i> Jyothi Engineering College <br><br>
+			<i class="fas fa-phone faa-pulse animated" style=";padding-left:30px"></i> +91-9567-225-125 
+		<div>
+	</div>
 </div>
-
+	
 
 
  <!--Footer-->
- <div class="foot">
+<div class="foot">
 		<div class="container">
 			<div class="row">
 				<!-- Footer Copyright -->
 				<div class="col" align="center">
 					<p>
 						<font color="white">© Copyright 2018. All Rights Reserved. | Developed &amp; Maintained by the Interns of
-							<a href="http://jecc.ac.in/infrastructure/tbi" title="TBI"> tbi@jec </a> CSE - 2017 Admitted Batch.</font>
+						<a href="http://jecc.ac.in/infrastructure/tbi" title="TBI"> tbi@jec </a> CSE - 2017 Admitted Batch.</font>
 					</p>
 				</div>
 				<!-- Copy Right Content -->
@@ -142,8 +135,7 @@
 			<!-- Footer Copyright -->
 		</div>
 		<!-- Container Closed-->
-	</div>
-    <!--Footer closed-->
+</div><!--Footer closed-->
     
 
     <!-- Optional JavaScript -->

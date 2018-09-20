@@ -69,9 +69,9 @@
 				
 			</div>
 			<ul class="list-unstyled components">
-		    <a href="index.php"><h3 style="padding:10px";>Dash Board</h3></a>
+		    <a href="index.php"><h3 style="padding:10px;color:#05a8f3";>Dash Board</h3></a>
 				<li>
-					<a href="#homeSubmenu" data-toggle="collapse" aria-expanded="false" class="dropdown-toggle">Services</a>
+					<a href="#homeSubmenu" data-toggle="collapse" aria-expanded="false" class="dropdown-toggle" style="color:#05a8f3">Services</a>
 					<ul class="collapse list-unstyled" id="homeSubmenu">
 						<li>
 							<a href="http://www.jecc.ac.in/campusbook">
@@ -92,7 +92,7 @@
 					</ul>
 				</li>
 				<li>
-					<a href="#pageSubmenu" data-toggle="collapse" aria-expanded="false" class="dropdown-toggle">Page</a>
+					<a href="#pageSubmenu" data-toggle="collapse" aria-expanded="false" style="color:#05a8f3" class="dropdown-toggle">Page</a>
 					<ul class="collapse list-unstyled" id="pageSubmenu">
 						<li><a href="index.php">Home</a></li>
 						<li><a href="totals.php">Visits</a></li>

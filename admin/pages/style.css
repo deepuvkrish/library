@@ -56,7 +56,7 @@ a:focus{
     min-width: 250px;
     max-width: 250px;
     min-height: 600px;
-    background: rgb(7, 37, 65);
+    background: rgb(29, 32, 34);
     color: #fff;
     transition: all 0.3s;
 }
@@ -84,13 +84,13 @@ a:focus{
 }
 #sidebar ul li a:hover {
     color: #f1f6f8;
-    background: rgb(5, 97, 158);
+    background: rgb(57, 63, 67);
 }
 
 #sidebar ul li.active>a,
 a[aria-expanded="true"] {
-    color: rgb(255, 225, 0);
-    background: #022f46;
+    color: #05a8f3;
+    background: rgb(23, 27, 29);
 }
 a[data-toggle="collapse"] {
     position: relative;
@@ -106,12 +106,12 @@ a[data-toggle="collapse"] {
 ul ul a {
     font-size: 0.9em !important;
     padding-left: 30px !important;
-    background: #011c29;
+    background: #151718;
 }
 ul ul a.active {
     font-size: 0.9em !important;
     padding-left: 30px !important;
-    background: #c8ff03;
+    background: #05a8f3;
 }
 
 
@@ -168,8 +168,7 @@ a.article:hover {
 .panel {
     margin-bottom: 20px;
     background-color: #fff;
-    border: 1px solid transparent;
-    border-radius: 4px;
+    border-radius: 6px;
     -webkit-box-shadow: 0 1px 1px rgba(0, 0, 0, .05);
 	box-shadow: 0 1px 1px rgba(0, 0, 0, .05);
 	min-width: 250px;
