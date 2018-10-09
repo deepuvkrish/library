@@ -185,17 +185,26 @@ a.article:hover {
     border-color: #80035c;
     color: white;
     background-color: #80035c;
+    min-width: 250px;
+    margin-bottom: 20px;
+    border-radius: 16px;
 }
 .panel-yellow > .panel-heading {
     border-color: #ffa600;
     color: white;
     background-color: #ffa600;
+    min-width: 250px;
+    margin-bottom: 20px;
+    border-radius: 16px;
 }
 
 .panel-grn > .panel-heading {
     border-color: #00460c;
     color: white;
     background-color: #00460c;
+    min-width: 250px;
+    margin-bottom: 20px;
+    border-radius: 16px;
 }
 
 
@@ -205,6 +214,9 @@ a.article:hover {
     border-color: #880000;
     color: white;
     background-color: #650303;
+    min-width: 250px;
+    margin-bottom: 20px;
+    border-radius: 16px;
 }
 
 

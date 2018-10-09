@@ -26,7 +26,7 @@
 	<link rel="stylesheet" type="text/css" href="../dist/css/anima.css">
 
     <link rel="stylesheet" type="text/css" href="../dist/css/style.css">
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" type="text/css" href="css/styles.css">
 	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css">
 
 

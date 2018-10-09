@@ -19,6 +19,7 @@
 	<!-- Bootstrap CSS version 4.1.3 -->
 	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO"
 	 crossorigin="anonymous">
+	<link rel="stylesheet" href="style.css">
 	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css">
 
 	<!--Font Awesome version 5.2.0-->
@@ -27,12 +28,8 @@
 	<!-- FontAwesome Icon Animation CSS-->
 	<link rel="stylesheet" type="text/css" href="../dist/css/anima.css">
 	<link rel="stylesheet" type="text/css" href="../dist/css/style.css">
-    <link rel="stylesheet" type="text/css" href="css/style.css">
-    <link rel="stylesheet" type="text/css" href="css/clock.css">
-    <link rel="stylesheet" type="text/css" href="css/styles.css">
-	<link rel="stylesheet" type="text/css" href="css/laser.css">
-
-
+	<link rel="stylesheet" type="text/css" href="css/style.css">
+	<link rel="stylesheet" type="text/css" href="css/styles.css">
 
 
 
@@ -159,8 +156,10 @@
 		<nav id="sidebar">
 			<div class="sidebar-header">
 				<h3>Menu</h3>
+				
 			</div>
 			<ul class="list-unstyled components">
+				
 				<li>
 					<a href="#homeSubmenu" style="color:#05a8f3" data-toggle="collapse" aria-expanded="false" class="dropdown-toggle">Services</a>
 					<ul class="list-unstyled" id="homeSubmenu">
@@ -197,13 +196,15 @@
 
 		<!--main page-->
 		<div class="content">
+			
+
 			<!--Main Content-->
 			<div class="rows">
-				<div class="col-sm-4" style="padding-top:40px">
+				<div class="col-sm-4">
 					<!-- 1st Column starts-->
 					<div class="rows">
 						<!-- Currently Inside Row -->
-						<div class="panel-grn">
+						<div class="panel panel-grn">
 							<div class="panel-heading">
 								<div class="row">
 									<div class="col-xs-3">
@@ -221,10 +222,10 @@
 								</div>
 							</div>
 						</div>
-					</div> <!-- End of 1st Row -->
+					</div>
 					<div class="rows">
 						<!-- Total Visits -->
-						<div class="panel-vio">
+						<div class="panel panel-vio">
 							<div class="panel-heading">
 								<div class="row">
 									<div class="col-xs-3">
@@ -232,9 +233,10 @@
 									</div>
 									<div class="col-xs-9">
 										<div class="huge" style="padding:10px">
-											<p>Total Visits :</p>
+										<p2>Total Visits :</p2>
 											<?php echo $num_visit; ?>
 										</div>
+										
 									</div>
 								</div>
 								<a href="totals.php">
@@ -248,10 +250,10 @@
 								</a>
 							</div>
 						</div>
-					</div> <!-- End of 2nd Row -->
+					</div>
 					<div class="rows">
 						<!-- All Reports -->
-						<div class="panel-yellow">
+						<div class="panel panel-yellow">
 							<div class="panel-heading">
 								<div class="row">
 									<div class="col-xs-3">
@@ -272,75 +274,50 @@
 								</a>
 							</div>
 						</div>
-					</div> <!-- End of 3rd Row -->
+					</div>
 				</div>
-				<!-- end of column-->
-			</div>
+				<!-- end of 1st column-->
+
+		</div>
 			<!--End Of Main Content-->
-		</div>
-		<!--Main Page Ends-->
 
 
-		<!-- Digital Clock Display -->
-		<div id="clock" class="dark">
-			<div class="display">
-				<div class="weekdays"></div>
-				<div class="ampm"></div>
-				<div class="alarm"></div>
-				<div class="digits"></div>
-				<div class="preloader-scan" style="position:relative;padding-bottom:30px">
-  					<ul>
-						<li></li>
-						<li></li>
-						<li></li>
-						<li></li>
-						<li></li>
-						<li></li>
-						<li></li>
-						<li></li>
-						<li></li>
-						<li></li>
-						<li></li>
-						<li></li>
-						<li></li>
-						<li></li>
-						<li></li>
-						<li></li>
-						<li></li>
-						<li></li>
-						<li></li>
-						<li></li>
-						<li></li>
-						<li></li>
-						<li></li>
-						<li></li>
-						<li></li>
-						<li></li>
-						<li></li>
-						<li></li>
-						<li></li>
-						<li></li>
-						<li></li>
-						<li></li>
-    					<div class="diode">
-      						<div class="laser"></div>
-    					</div>
-  					</ul>
-  				</div>
-			</div>
 			
-		</div>
-		<!-- Clock Display Ends Here-->
-		
-		
-		
-	</div>
-	<!--Wrapper Ends-->
-
-<!-- remove div from here -->
 </div>
 
-<!--Footer-->
+	<div class="clock-container">
+  
+		<div class="clock-digital">
+    		<div class="date"></div>
+   	 		<div class="time"></div>
+    		<div class="day"> </div>
+  		</div>
+  		<div class="clock-analog">
+    		<div class="spear"></div>
+    		<div class="hour"></div>
+    		<div class="minute"></div>
+    		<div class="second"></div>
+    		<div class="dail"></div>
+  		</div>
+	</div>
+		<!--Main Page Ends-->
+
+	<div id="clock" class="light">
+<div class="display">
+<div class="weekdays"></div>
+<div class="ampm"></div>
+<div class="alarm"></div>
+<div class="digits"></div>
+</div>
+</div>
+		
+</div>
+
+</div>
+	<!--Wrapper Ends-->
+
+
+    <!--Footer-->
 	<div class="foot">
 		<div class="container">
 			<div class="row">
@@ -370,10 +347,8 @@
 	 crossorigin="anonymous"></script>
 	<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy"
 	 crossorigin="anonymous"></script>
-	<script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js'></script>
-    <script src="js/index.js"></script>
-    <script src="http://cdnjs.cloudflare.com/ajax/libs/moment.js/2.0.0/moment.min.js"></script>
-    <script src="js/digitalclock.js"></script>
+	 <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js'></script>
+	 <script src="js/index.js"></script>
  
 
 	
