@@ -35,7 +35,7 @@ body {
 .foot {
   position: fixed;
   left: 0;
-  bottom: 0;
+  top:95%;
   width: 100%;
   background-color:rgb(29, 29, 29);
   color: white;

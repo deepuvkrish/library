@@ -126,8 +126,8 @@
                                     <div class="col">
                                         To<br><input type="date" value="data" name="date_end"><br>
                                     </div>
-                                    <div class="col">
-                                        <button type="submit" name="save" class="btn btn-primary" value="Search Results... " > Submit
+                                    <div class="col" style="padding-top:18px">
+                                        <button type="submit" name="save" class="btn btn-prima" value="Search Results... " > Submit
                                             <i class="fas fa-spinner fa-pulse"></i>
                                         </button>
                                     </div>
@@ -183,6 +183,26 @@
             </div>
 
         </div>
+             <!--Footer-->
+             </div>
+	<div class="foot">
+		<div class="container">
+			<div class="row">
+				<!-- Footer Copyright -->
+				<div class="col" align="center">
+					<p>
+						<font color="white">© Copyright 2018. All Rights Reserved. | Developed &amp; Maintained by the Interns of
+							<a href="http://jecc.ac.in/infrastructure/tbi" title="TBI"> tbi@jec </a> CSE - 2017 Admitted Batch.</font>
+					</p>
+				</div>
+				<!-- Copy Right Content -->
+			</div>
+			<!-- Footer Copyright -->
+		</div>
+		<!-- Container Closed-->
+	</div>
+	<!--Footer closed-->
+
 
  
 </body>
